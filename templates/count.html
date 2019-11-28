@@ -1,0 +1,13 @@
+<h1>count</h1>
+
+<a href="{% url 'home' %}">Start again</a>
+<h4>{{fulltext}}</h4>
+
+
+
+{% for term, num in sorted_words %}
+<li>{{term}}  -  {{num}} </li>
+
+   
+
+{% endfor %}
